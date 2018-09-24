@@ -1,0 +1,153 @@
+@media screen and (max-width:768px) {
+  html {
+    font-size: 100%; }
+  
+  *, *::before, *::after {
+    box-sizing: border-box; }
+  
+  body {
+    font-family: 'Playfair Display SC', serif;
+    width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 1px; }
+  
+  a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #000; }
+  
+.header {
+  width: 100%;
+}
+
+.header .logo-wrapper {
+    text-align: center;
+    width: 80%; }
+    .header .logo-wrapper .logo {
+      height: 40px;
+    }
+  .header .menu {
+    display: none; }
+
+
+.item-wrapper {
+    position: absolute;
+    top: 40px;
+}
+  .item-wrapper .item {
+    text-align: center;
+    margin: 2%; 
+  }
+    .item-wrapper .item:hover {
+      opacity: 0.8;
+      padding: 1%; }
+    .item-wrapper .item img {
+      display: inline-block;
+      width: 150px;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);}
+  .item-wrapper .wide {
+    height: 100px; }
+  .item-wrapper .wide1 {
+    height: 115px; }
+  .item-wrapper .high {
+    height: 225px; }
+  .item-wrapper .high1 {
+    height: 266px; }
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 15%; }
+
+/*# sourceMappingURL=style-men.css.map */
+nav.globalMenuSp {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #696969;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  width: 100%; }
+
+nav.globalMenuSp ul {
+  background: #FAFAFA;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; }
+  nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px dotted #696969; }
+    nav.globalMenuSp ul li:last-child {
+      padding-bottom: 0;
+      border-bottom: none; }
+
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li a {
+  display: block;
+  color: #696969;
+  padding: 1em 0; }
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  transform: translateY(0%); }
+
+.navToggle {
+  display: block;
+  position: fixed;
+  /* bodyに対しての絶対位置指定 */
+  right: 13px;
+  top: 12px;
+  width: 42px;
+  height: 51px;
+  cursor: pointer;
+  z-index: 3;
+  background: #FAFAFA;
+  text-align: center; }
+  .navToggle span {
+    display: block;
+    position: absolute;
+    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 3px #696969;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px; }
+    .navToggle span:nth-child(1) {
+      top: 9px; }
+    .navToggle span:nth-child(2) {
+      top: 18px; }
+    .navToggle span:nth-child(3) {
+      top: 27px; }
+    .navToggle span:nth-child(4) {
+      border: none;
+      color: #696969;
+      font-size: 9px;
+      font-weight: bold;
+      top: 34px; }
+
+/* 最初のspanをマイナス45度に */
+.navToggle.active span:nth-child(1) {
+  top: 18px;
+  left: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/*# sourceMappingURL=style-index.css.map */
+
+}

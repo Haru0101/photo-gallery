@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style-men.css">
+        <link rel="stylesheet" href="css/mobile-men.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+        <link href="js/slick.css" rel="stylesheet" type="text/css">
+        <!-- 新しいやつ -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+        <title>Haruki Okuda</title>
+    </head>
+    <body>
+        <div class="navToggle">
+            <span></span><span></span><span></span><span>menu</span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <li><a href="./index.html">TOP</a></li>
+                <li><a href="./men.html">MEN</a></li>
+                <li><a href="./women.html">WOMEN</a></li>
+                <li><a href="./other.html">OTHER</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <div class="logo-wrapper">
+                <img class="logo" src="./images/logo.png"></img>
+            </div>
+            <div class="menu">
+                <a class="top nav" href="./index.html">TOP</a>
+                <a class="men nav" href="./men.html">MEN</a>
+                <a class="women nav" href="./women.html">WOMEN</a>
+                <a class="other nav" href="./other.html">OTHER</a>
+            </div>
+        </div>
+        <section class="item-wrapper">
+            <div class="item wide">
+                <a href="./images/other01.jpg" data-lightbox=”20180924″><img src="./images/other01.jpg"></a>
+            </div>
+            <div class="item wide">
+                <a href="./images/other02.jpg" data-lightbox=”20180924″><img src="./images/other02.jpg"></a>
+            </div>
+            <div class="item wide">
+                <a href="./images/other03.jpg" data-lightbox=”20180924″><img src="./images/other03.jpg"></a>
+            </div>
+            <div class="item high">
+                <a href="./images/other04.jpg" data-lightbox=”20180924″><img src="./images/other04.jpg"></a>
+            </div>
+            <div class="item wide">
+                <a href="./images/other05.jpg" data-lightbox=”20180924″><img src="./images/other05.jpg"></a>
+            </div>
+            <div class="item wide">
+                <a href="./images/other06.jpg" data-lightbox=”20180924″><img src="./images/other06.jpg"></a>
+            </div>
+            <div class="item wide1">
+                <a href="./images/other07.jpg" data-lightbox=”20180924″><img src="./images/other07.jpg"></a>
+            </div>
+            <div class="item wide1">
+                <a href="./images/other08.jpg" data-lightbox=”20180924″><img src="./images/other08.jpg"></a>
+            </div>
+            <div class="item wide1">
+                <a href="./images/other09.jpg" data-lightbox=”20180924″><img src="./images/other09.jpg"></a>
+            </div>
+        </section>
+        <section class="footer">
+            <p>Copyright © Haruki Okuda All rights reserved.</p>
+        </section>
+        
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script>
+        
+            new Masonry('.item-wrapper', {
+                itemSelector: '.item',
+            });
+        </script>
+        <script>
+            $(function() {
+                $('.navToggle').click(function() {
+                    $(this).toggleClass('active');
+ 
+                    if ($(this).hasClass('active')) {
+                        $('.globalMenuSp').addClass('active');
+                    } else {
+                        $('.globalMenuSp').removeClass('active');
+                    }
+                });
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
