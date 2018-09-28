@@ -41,16 +41,16 @@
       padding: 1%; }
     .item-wrapper .item img {
       display: inline-block;
-      width: 100px;
+      width: 120px;
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);}
   .item-wrapper .wide {
-    height: 66px; }
+    height: 79px; }
   .item-wrapper .wide1 {
-    height: 76px; }
+    height: 91px; }
   .item-wrapper .high {
-    height: 150px; }
+    height: 180px; }
   .item-wrapper .high1 {
-    height: 178px; }
+    height: 214px; }
 
 .footer {
   width: 100%;

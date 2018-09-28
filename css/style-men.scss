@@ -41,10 +41,30 @@ a:link, a:visited, a:hover, a:active {
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-            a:hover {
-                     border-bottom: 1px solid #000;
+            a {
+                transition: 0.25s ease-in-out;
+                position: relative;
+                &:hover{
+                     //border-bottom: 1px solid #000;
                      opacity: 0.6;
-                }   
+                     &::before {
+                         width: 100%;
+                         transition: 0.25s ease-in-out;
+                     }
+                }
+                &::before {
+                    width: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    background: #000;
+                    position: absolute;
+                    bottom: -5px;
+                    content: "";
+                } // hoverしてないときの処理
+            }
+                
+                
         }
 }
 
@@ -62,21 +82,21 @@ a:link, a:visited, a:hover, a:active {
         }
         img {
             display: inline-block;
-            width: 300px;
+            width: 250px;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
         }
     }
     .wide {
-        height: 200px;
+        height: 166px;
     }
     .wide1 {
-        height: 230px;
+        height: 190px;
     }
     .high {
-        height: 450px;
+        height: 373px;
     }
     .high1 {
-        height: 533px;
+        height: 442px;
     }
 }
 

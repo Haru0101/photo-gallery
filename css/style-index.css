@@ -31,12 +31,26 @@ a:link, a:visited, a:hover, a:active {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center; }
-    .header .menu a:hover {
-      border-bottom: 1px solid #000;
-      opacity: 0.6; }
+    .header .menu a {
+      transition: 0.25s ease-in-out;
+      position: relative; }
+      .header .menu a:hover {
+        opacity: 0.6; }
+        .header .menu a:hover::before {
+          width: 100%;
+          transition: 0.25s ease-in-out; }
+      .header .menu a::before {
+        width: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        background: #000;
+        position: absolute;
+        bottom: -5px;
+        content: ""; }
 
 .main-slider .slider img {
-  width: 70%;
+  width: 60%;
   margin: 0 auto; }
 
 .footer {

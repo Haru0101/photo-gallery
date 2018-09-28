@@ -40,17 +40,37 @@ a:link, a:visited, a:hover, a:active {
             flex-flow: row wrap;
             justify-content: space-between;
             align-items: center;
-            a:hover {
-                     border-bottom: 1px solid #000;
+            a {
+                transition: 0.25s ease-in-out;
+                position: relative;
+                &:hover{
+                     //border-bottom: 1px solid #000;
                      opacity: 0.6;
-                }   
+                     &::before {
+                         width: 100%;
+                         transition: 0.25s ease-in-out;
+                     }
+                }
+                &::before {
+                    width: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    background: #000;
+                    position: absolute;
+                    bottom: -5px;
+                    content: "";
+                } // hoverしてないときの処理
+            }
+                
+                
         }
 }
 
 .main-slider {
     
     .slider img {
-        width: 70%;
+        width: 60%;
         margin: 0 auto;
     }
 }
